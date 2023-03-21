@@ -34,7 +34,9 @@ const Card = () => {
                         <p className='lead'>{adviceDto?.slip.advice}</p>
                     </div>
                     <div><img className='divider' src={divider} /></div>
-                    <button className='incondice' onClick={getRandAdviceAsync}><img src={icondice} /></button>
+                    <div className='iconContainer'>
+                        <button className='incondice' onClick={getRandAdviceAsync}><img src={icondice} /></button>
+                    </div>
                 </div>
 
             </div>
