@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**** variables *****/
+$gap: 2vh;
+$color-bg: #202632;
+$color-card: #313a49;
+
+/* media screen sizes */
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 960px,
+  larges: 1200px,
+  extraLarge: 3840px,
+);
+
+@mixin query($display) {
+  @each $key, $value in $breakpoints {
+    //  defining max-width
+    @if ($display == $key) {
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+  }
+}

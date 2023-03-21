@@ -1,0 +1,140 @@
+@import "./main.scss";
+
+body {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #202632;
+}
+
+/* mobile styles */
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $color-bg;
+
+  .card {
+    background-color: $color-card;
+    width: 80%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-radius: 20px;
+
+    .inside-card {
+      padding: 30px;
+      position: relative;
+
+      .idContainer {
+        margin-bottom: 20px;
+
+        .adviceId {
+          color: rgb(76, 241, 101);
+          font-size: 0.7em;
+          font-weight: 400;
+          letter-spacing: 0.2em;
+          margin-bottom: 10px;
+        }
+      }
+      .adviceContainer {
+        padding: 0px 20px;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .divider {
+        margin: 20px 0px;
+        width: 90%;
+      }
+      .incondice {
+        background-color: rgb(27, 217, 55);
+        border-radius: 50%;
+        padding: 15px;
+        position: fixed;
+        cursor: pointer;
+        margin-left: -32px;
+      }
+    }
+  }
+}
+
+/* tablet styles */
+
+@media screen and (min-width: 620px) {
+  .grid {
+    .card {
+      width: 60%;
+    }
+  }
+}
+/* 
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 768px) {
+  .grid {
+    .card {
+      width: 60%;
+
+      .lead {
+        font-size: 1.3em;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .grid {
+    .card {
+      width: 60%;
+
+      .lead {
+        font-size: 1.3em;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+/* desktop style */
+@media screen and (min-width: 1200px) {
+  .grid {
+    .card {
+      width: 50%;
+      .lead {
+        font-size: 1.2em;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+/* Extra Large desktop style */
+@media screen and (min-width: 1440px) {
+  .grid {
+    .card {
+      width: 50%;
+      .lead {
+        font-size: 1.2em;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+.incondice :hover {
+  animation: incondice 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes incondice {
+  from {
+    filter: drop-shadow(0 0 5px #1bd937) drop-shadow(0 0 15px #56df6b)
+      drop-shadow(0 0 20px #56df6b);
+  }
+
+  to {
+    filter: drop-shadow(0 0 20px #1bd937) drop-shadow(0 0 25px #56df6b)
+      drop-shadow(0 0 40px #56df6b);
+  }
+}
