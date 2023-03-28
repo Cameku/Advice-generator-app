@@ -60,7 +60,6 @@ body {
 }
 
 /* tablet styles */
-
 @media screen and (min-width: 620px) {
   .grid {
     .card {
@@ -68,7 +67,6 @@ body {
     }
   }
 }
-/* 
 
 /* large tablets & laptop styles */
 @media screen and (min-width: 768px) {
@@ -123,6 +121,7 @@ body {
   }
 }
 
+/* Hover style */
 .iconContainer :hover {
   animation: iconContainer 1.5s ease-in-out infinite alternate;
 }

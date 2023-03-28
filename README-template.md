@@ -5,14 +5,14 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
+- [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -42,15 +42,15 @@ Users should be able to:
 
 ### Built with
 
+- React.js
+- hooks
 - JSX
 - TypeScript
 - SCSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- React.js
 - [React](https://reactjs.org/) - JS library
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
@@ -75,7 +75,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - Website - [Catherine](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
